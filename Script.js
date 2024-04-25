@@ -42,6 +42,48 @@ AboutClicked.addEventListener('click', function() {
 
 
 
-AOS.init({
-    once: true
-});
+
+
+let splash = document.querySelector(".div-main-splash");
+let logo = document.querySelector(".img-logo-splash-screen");
+let DivMainFirstP1 = document.querySelector(".div-main-first-p1");
+let Main = document.querySelector("Main");
+
+if(splash) {
+    document.addEventListener('DOMContentLoaded',
+    function(event) {
+        setTimeout(function(){
+            logo.classList.add('animation')
+        }, 1000);
+        setTimeout(function(){
+            splash.style.display = 'none'
+        }, 4000);
+        setTimeout(function(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            }),
+            
+            AOS.init({
+                once: true
+            });
+        }, 4010);
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
