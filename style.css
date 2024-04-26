@@ -38,6 +38,7 @@ html {
 
 body {
     background-color: rgba(0,0,36,255);
+    margin: 0;
 }
 
 * {
@@ -125,6 +126,21 @@ nav {
     right: 2rem;
     top: 60px;
     width: 58vw;
+}
+
+.a-about:hover {
+    color: var(--lightest-blue);
+    transition: 0.5s;
+}
+
+.a-portfolio-nav:hover {
+    color: var(--lightest-blue);
+    transition: 0.5s;
+}
+
+.a-achievement:hover {
+    color: var(--lightest-blue);
+    transition: 0.5s;
 }
 
 .a-contact {
@@ -298,6 +314,36 @@ nav {
     width: 30vw;
     height: 80vh;
     transition: 0.2s;
+}
+
+.img-game-travelwithme {
+    content: url(assets/images/Cover-Game-TravelWithMe.png);
+    width: 30vw;
+    height: 80vh;
+}
+
+.img-game-travelwithme:hover {
+    content: url(assets/images/Game-TravelWithMe.png);
+    width: 30vw;
+    height: 80vh;
+}
+
+.img-desktop-app-bromo-airlines {
+    content: url(assets/images/Cover-Desktop-App-Bromo-Airlines.png);
+    width: 30vw;
+    height: 80vh;
+}
+
+.img-app-notes {
+    content: url(assets/images/Cover-App-Notes.png);
+    width: 30vw;
+    height: 80vh;
+}
+
+.img-app-notes:hover {
+    content: url(assets/images/App-Notes.png);
+    width: 30vw;
+    height: 80vh;
 }
 
 .a-portfolio {
@@ -561,6 +607,7 @@ nav {
     background-color: var(--lightest-blue);
     color: rgba(0,0,36,255);
     font-weight: bold;
+    cursor: pointer;
 }
 
 
@@ -902,6 +949,7 @@ footer {
     margin: 0;
     padding: 0;
     top: 0;
+    left: 0;
 }
 
 .img-logo-splash-screen {
@@ -937,8 +985,298 @@ footer {
 @keyframes glide {
     100% {
         margin-top: 7.5px;
-        margin-left: 60px;
+        margin-left: 68px;
         width: 50px;
         height: 50px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.div-main-form {
+    /* background-color: red; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    /* display: none; */
+}
+
+#div-main-contact-side {
+    /* position: fixed; */
+    background-color: rgba(0, 0, 0, 0.4);
+    top: 0;
+    right: 0;
+}
+
+/* contact h1  */
+/* .contact-h1 {
+    margin-top: 55px ;
+} */
+
+.title-contact {
+    margin: 10px;
+    color: var(--lightest-slate);
+    font-family: Calibre-bold;
+}
+
+.p-contact {
+    margin: 0;
+    color: var(--lightest-slate);
+    font-family: Calibre-regular;
+}
+
+.h4-contact {
+    margin: 10px;
+    color: var(--lightest-slate);
+    font-family: Calibre-regular;
+}
+
+/* div contact  */
+.contact {
+    display: inline-block;
+    /* margin: 10px 30px; */
+    text-align: center;
+    /* margin-right: 100px; */
+    /* padding: 0 0px 0 500px; */
+    background-color: rgba(0,0,36,255);
+    padding: 15px;
+}
+
+.profile-contact-img {
+    width: 180px;
+    border-radius: 100%;
+    margin-top: 10px;
+}
+
+/* tempat form  */
+.form-countainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* tempat untuk input  */
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+/* icon fontawesome  */
+.icon {
+    margin-right: 6px;
+}
+
+/* fontawesome  */
+.fa-user,
+.fa-map-marker-alt,
+.fa-envelope-open,
+.fa-comment {
+    font-size: 27px;
+    color: var(--lightest-slate);
+}
+
+
+/* CSS for Label  */
+
+
+/* form label  */
+.form-label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: var(--lightest-slate);
+}
+
+
+/* CSS fot Input Name,City and Email */
+
+
+/* tempat untuk input  */
+.form-input {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    outline: none;
+    height: 48px;
+    margin-bottom: 15px;
+    padding: 0;
+}
+
+/* label input  */
+.input-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-style: none;
+    outline: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+    color: var(--lightest-slate);
+}
+
+
+/* CSS for Textarea  */
+
+
+/* container textarea  */
+.textarea-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* form textarea  */
+.form-textarea {
+    position: relative;
+}
+
+/* textarea  */
+.textarea {
+    border-style: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    margin-top: 10px;
+    background-color: rgba(0,0,36,255);
+    font-size: 15px;
+    color: var(--lightest-slate);
+}
+
+
+/* CSS for Submit  */
+
+
+/* submit button  */
+.submit {
+    border-style: none;
+    border-radius: 25px;
+    color: aliceblue;
+    /* background-color: rgb(110, 82, 247); */
+    background-color: rgba(0,0,36,255);
+    margin: 5px;
+    cursor: pointer;
+    padding: 10px 120px;
+    outline: 1px solid grey;
+}
+
+.input-item:focus + .form-label {
+    top: -5px;
+    left: -2px;
+    font-size: 10px;
+}
+
+.textarea:focus + .form-label {
+    top: -5px;
+    left: -2px;
+    font-size: 10px;
+}
+
+.input-item:not(:placeholder-shown).input-item:not(:focus) + .form-label {
+    top: -2px;
+    left: -2px;
+    font-size: 10px;
+    /* color: rgb(138, 130, 130); */
+    color: var(--lightest-slate);
+}
+
+.textarea:not(:placeholder-shown).textarea:not(:focus) + .form-label {
+    top: -2px;
+    left: -2px;
+    font-size: 10px;
+    /* color: rgb(138, 130, 130); */
+    color: var(--lightest-slate);
+}
+
+.button-close {
+    /* text-align: right; */
+    /* margin-right: 8px;
+    margin-top: 5px; */
+    position: absolute;
+    font-size: 40px;
+    margin-left: 275px;
+    color: var(--lightest-slate);
+}
+
+.button-close:hover {
+    cursor: pointer;
+    color: var(--lightest-blue);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    /* border: 1px solid red; */
+}
+
+.div-main-notification {
+    background-color: rgba(0,0,36,255);
+    display: flex;
+    position: fixed;
+    width: 155px;
+    justify-content: space-around;
+    padding: 0px 5px 0px 5px;
+    border-radius: 100px;
+    /* margin: auto; */
+    bottom: 100px;
+    left: 44.6%;
+    z-index: 35;
+}
+
+.img-logo-notification {
+    width: 25px;
+    height: 25px;
+    margin-top: 12px;
+}
+
+.p-notification {
+    color: var(--lightest-slate);
+    font-family: Calibre-regular;
+}
+
+.fa-circle-check {
+    color: rgb(42, 222, 42);
+    height: 17px;
+    margin-top: 16px;
+}
+
+
+
+
+
+
+
+.IframeFormSubmit {
+    display: none;
 }

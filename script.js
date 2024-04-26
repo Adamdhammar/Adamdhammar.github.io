@@ -26,11 +26,76 @@ window.addEventListener('load', function() {
 
 
 let AboutClicked = document.getElementById('About');
+let PortfolioClicked = document.getElementById('Portfolio');
+let AchievementClicked = document.getElementById('Achievement');
+let ContactClicked = document.getElementById('Contact');
+
+let AboutFooterClicked = document.getElementById('About-footer');
+let PortfolioFooterClicked = document.getElementById('Portfolio-footer');
+let AchievementFooterClicked = document.getElementById('Achievement-footer');
+let ContactFooterClicked = document.getElementById('Contact-footer');
+
+let PortfolioAboutClicked = document.getElementById('Portfolio-about');
 
 AboutClicked.addEventListener('click', function() {
-    // event.preventDefault();
     window.scrollTo({
         top: 0,
+        behavior: 'smooth'
+    })
+})
+
+AboutFooterClicked.addEventListener('click', function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+})
+
+PortfolioClicked.addEventListener('click', function() {
+    window.scrollTo({
+        top: 600,
+        behavior: 'smooth'
+    })
+})
+
+PortfolioFooterClicked.addEventListener('click', function() {
+    window.scrollTo({
+        top: 600,
+        behavior: 'smooth'
+    })
+})
+
+PortfolioAboutClicked.addEventListener('click', function() {
+    window.scrollTo({
+        top: 600,
+        behavior: 'smooth'
+    })
+})
+
+AchievementClicked.addEventListener('click', function() {
+    window.scrollTo({
+        top: 2600,
+        behavior: 'smooth'
+    })
+})
+
+AchievementFooterClicked.addEventListener('click', function() {
+    window.scrollTo({
+        top: 2600,
+        behavior: 'smooth'
+    })
+})
+
+ContactClicked.addEventListener('click', function() {
+    window.scrollTo({
+        top: 5580,
+        behavior: 'smooth'
+    })
+})
+
+ContactFooterClicked.addEventListener('click', function() {
+    window.scrollTo({
+        top: 5580,
         behavior: 'smooth'
     })
 })
@@ -53,17 +118,18 @@ if(splash) {
     document.addEventListener('DOMContentLoaded',
     function(event) {
         setTimeout(function(){
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            })
+        });
+        setTimeout(function(){
             logo.classList.add('animation')
         }, 1000);
         setTimeout(function(){
             splash.style.display = 'none'
         }, 4000);
-        setTimeout(function(){
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            }),
-            
+        setTimeout(function(){            
             AOS.init({
                 once: true
             });
@@ -86,4 +152,91 @@ if(splash) {
 
 
 
+let DivMainForm = document.querySelector(".div-main-form");
+let DivMainContact = document.getElementById("div-main-contact-side");
+let input = document.querySelector(".a-div-main-contact");
+let CloseButton = document.querySelector(".button-close");
 
+if(DivMainContact) {
+    document.addEventListener('DOMContentLoaded',
+    function(event) {
+        DivMainForm.style.zIndex = -1,
+        DivMainContact.style.marginLeft = '-500px',
+        DivMainContact.style.backgroundColor = 'transparent'
+    });
+};  
+
+input.addEventListener('click', function() {
+    // DivMainForm.style.display = 'block',
+    DivMainForm.style.zIndex = 20,
+    DivMainContact.style.transition = '1s',
+    DivMainContact.style.marginLeft = '0px',
+    DivMainContact.style.backgroundColor = 'rgba(0, 0, 0, 0.4)'
+    if(DivMainContact.style.marginLeft = '0px') {
+        CloseButton.addEventListener('click', function() {
+        DivMainContact.style.transition = '1s',
+        DivMainContact.style.marginLeft = '-500px',
+        DivMainContact.style.backgroundColor = 'transparent'
+        setTimeout(function(){
+            DivMainForm.style.zIndex = -1
+        }, 1000);
+        });
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let btnSubmit = document.querySelector('.submit');
+let notification = document.querySelector('.div-main-notification');
+let inputNama = document.getElementById("name");
+let inputCity = document.getElementById("city");
+let inputEmail = document.getElementById("email");
+let textarea = document.getElementById("message");
+// var modal = document.querySelector('.modal-container');
+
+if(btnSubmit){
+    document.addEventListener('DOMContentLoaded',
+    function(event) {
+        notification.style.bottom = '-200px'
+    });
+
+    btnSubmit.addEventListener('click', function(){
+        // inputItem.value = "",
+        // textarea.value = "",
+
+        if(inputNama.value === '' || inputNama.value === ' ' || inputCity.value === '' || inputCity.value === ' ' || inputEmail.value === '' || inputEmail.value === ' ' || textarea.value === '' || textarea.value === ' ') {
+            alert('Data tidak boleh kosong!');
+        }
+        else {
+            setTimeout(function(){
+                document.getElementById("name").value = '';
+                document.getElementById("city").value = '';
+                document.getElementById("email").value = '';
+                document.getElementById("message").value = '';
+            }, 100);
+    
+            notification.style.transition = '0.5s',
+            notification.style.bottom = '100px'
+            setTimeout(function(){
+                notification.style.transition = '1s',
+                notification.style.bottom = '-200px'
+            }, 2000);
+        }
+    });
+}
