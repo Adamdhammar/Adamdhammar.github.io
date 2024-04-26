@@ -52,50 +52,71 @@ AboutFooterClicked.addEventListener('click', function() {
 })
 
 PortfolioClicked.addEventListener('click', function() {
+    const screenHeight = window.innerHeight;
+    const targetPosition = screenHeight * 0.8;
     window.scrollTo({
-        top: 600,
+
+        top: targetPosition,
         behavior: 'smooth'
     })
 })
 
 PortfolioFooterClicked.addEventListener('click', function() {
+    const screenHeight = window.innerHeight;
+    const targetPosition = screenHeight * 0.8;
     window.scrollTo({
-        top: 600,
+
+        top: targetPosition,
         behavior: 'smooth'
     })
 })
 
 PortfolioAboutClicked.addEventListener('click', function() {
+    const screenHeight = window.innerHeight;
+    const targetPosition = screenHeight * 0.8;
     window.scrollTo({
-        top: 600,
+
+        top: targetPosition,
         behavior: 'smooth'
     })
 })
 
 AchievementClicked.addEventListener('click', function() {
+    const screenHeight = window.innerHeight;
+    const targetPosition = screenHeight * 3.5;
     window.scrollTo({
-        top: 2600,
+
+        top: targetPosition,
         behavior: 'smooth'
     })
 })
 
 AchievementFooterClicked.addEventListener('click', function() {
+    const screenHeight = window.innerHeight;
+    const targetPosition = screenHeight * 3.5;
     window.scrollTo({
-        top: 2600,
+
+        top: targetPosition,
         behavior: 'smooth'
     })
 })
 
 ContactClicked.addEventListener('click', function() {
+    const screenHeight = window.innerHeight;
+    const targetPosition = screenHeight * 7.7;
     window.scrollTo({
-        top: 5580,
+
+        top: targetPosition,
         behavior: 'smooth'
     })
 })
 
 ContactFooterClicked.addEventListener('click', function() {
+    const screenHeight = window.innerHeight;
+    const targetPosition = screenHeight * 7.7;
     window.scrollTo({
-        top: 5580,
+
+        top: targetPosition,
         behavior: 'smooth'
     })
 })
