@@ -41,9 +41,9 @@ body {
     margin: 0;
 }
 
-/* * {
-    border: 1px solid red;
-} */
+* {
+    /* border: 1px solid red; */
+}
 
 main {
     /* border: 1px solid red; */
@@ -52,7 +52,6 @@ main {
     padding: 12vw 0 0 0;
     /* height: 550vh; */
 }
-
 
 
 
@@ -257,14 +256,12 @@ nav {
 
 
 
-
-
 /* -----------Portfolio---------- */
 .div-title-portfolio {
     display: flex;
-    margin-top: 30vh;
-    padding: 0px 18vw 0 18vw;
-    margin-bottom: 15vh;
+    margin-top: 100px;
+    padding: 150px 18vw 0 18vw;
+    margin-bottom: 100px;
 }
 
 .h1-portfolio {
@@ -306,44 +303,44 @@ nav {
 .img-web-blissfullbali {
     content: url(assets/images/Cover-Web-BlissfullBali.png);
     width: 30vw;
-    height: 80vh;
+    max-height: 80vh;
 }
 
 .img-web-blissfullbali:hover {
     content: url(assets/images/Web-BlissfullBali.png);
     width: 30vw;
-    height: 80vh;
+    max-height: 80vh;
     transition: 0.2s;
 }
 
 .img-game-travelwithme {
     content: url(assets/images/Cover-Game-TravelWithMe.png);
     width: 30vw;
-    height: 80vh;
+    max-height: 80vh;
 }
 
 .img-game-travelwithme:hover {
     content: url(assets/images/Game-TravelWithMe.png);
     width: 30vw;
-    height: 80vh;
+    max-height: 80vh;
 }
 
 .img-desktop-app-bromo-airlines {
     content: url(assets/images/Cover-Desktop-App-Bromo-Airlines.png);
     width: 30vw;
-    height: 80vh;
+    max-height: 80vh;
 }
 
 .img-app-notes {
     content: url(assets/images/Cover-App-Notes.png);
     width: 30vw;
-    height: 80vh;
+    max-height: 80vh;
 }
 
 .img-app-notes:hover {
     content: url(assets/images/App-Notes.png);
     width: 30vw;
-    height: 80vh;
+    max-height: 80vh;
 }
 
 .a-portfolio {
@@ -389,7 +386,7 @@ nav {
     border: 1px solid var(--lightest-blue);
     border-radius: 5px;
     font-size: 1vw;
-    margin-top: 1vw;
+    margin-top: 1vh;
     display: inline-block;
 }
 
@@ -412,8 +409,9 @@ nav {
 /* ------------Achievement----------- */
 .div-title-achievement {
     display: flex;
-    margin-top: 18vh;
-    padding: 0px 18vw 0 18vw;
+    /* margin-top: 18vh; */
+    margin-top: 100px;
+    padding: 150px 18vw 0 18vw;
 }
 
 .h1-achievement {
@@ -439,7 +437,7 @@ nav {
     margin-top: 15vh;
     display: flex;
     flex-direction: column-reverse;
-    height: 370vh;
+    height: 2800px;
     justify-content: space-between;
 }
 
@@ -564,7 +562,9 @@ nav {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-top: 25vh;
+    /* margin-top: 25vh; */
+    margin-top: 100px;
+    padding-top: 130px;
     margin-bottom: 25vh;
 }
 
@@ -645,9 +645,9 @@ nav {
     /* transform: rotateX('90deg'); */
     position: fixed;
     transform: rotate(90deg);
-    /* bottom: 24vh;
-    right: -8vw; */
-    bottom: 8vh;
+    /* bottom: 8vh;
+    right: -13.5vw; */
+    bottom: 15vh;
     right: -13.5vw;
     display: flex;
     flex-direction: row;
@@ -1010,7 +1010,7 @@ footer {
 
 
 
-
+/* ---------Contact Aside---------- */
 
 .div-main-form {
     /* background-color: red; */
@@ -1023,18 +1023,11 @@ footer {
     /* display: none; */
 }
 
-#div-main-contact-side {
-    /* position: fixed; */
-    background-color: rgba(0, 0, 0, 0.4);
+/* #div-main-contact-side {
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
-}
-
-/* contact h1  */
-/* .contact-h1 {
-    margin-top: 55px ;
 } */
 
 .title-contact {
@@ -1307,8 +1300,17 @@ footer {
 
 
 
-@media (max-height: 910px) {
+@media (min-height: 730px) {
     .div-main-first {
         padding-top: 10vh;
+    }
+
+    .contact {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .button-close {
+        /* margin-top: -30px; */
     }
 }

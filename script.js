@@ -66,16 +66,8 @@ window.addEventListener('load', function() {
 
 
 let AboutClicked = document.getElementById('About');
-let PortfolioClicked = document.getElementById('Portfolio');
-let AchievementClicked = document.getElementById('Achievement');
-let ContactClicked = document.getElementById('Contact');
 
 let AboutFooterClicked = document.getElementById('About-footer');
-let PortfolioFooterClicked = document.getElementById('Portfolio-footer');
-let AchievementFooterClicked = document.getElementById('Achievement-footer');
-let ContactFooterClicked = document.getElementById('Contact-footer');
-
-let PortfolioAboutClicked = document.getElementById('Portfolio-about');
 
 AboutClicked.addEventListener('click', function() {
     window.scrollTo({
@@ -91,75 +83,6 @@ AboutFooterClicked.addEventListener('click', function() {
     })
 })
 
-PortfolioClicked.addEventListener('click', function() {
-    const screenHeight = window.innerHeight;
-    const targetPosition = screenHeight * 0.8;
-    window.scrollTo({
-
-        top: targetPosition,
-        behavior: 'smooth'
-    })
-})
-
-PortfolioFooterClicked.addEventListener('click', function() {
-    const screenHeight = window.innerHeight;
-    const targetPosition = screenHeight * 0.8;
-    window.scrollTo({
-
-        top: targetPosition,
-        behavior: 'smooth'
-    })
-})
-
-PortfolioAboutClicked.addEventListener('click', function() {
-    const screenHeight = window.innerHeight;
-    const targetPosition = screenHeight * 0.8;
-    window.scrollTo({
-
-        top: targetPosition,
-        behavior: 'smooth'
-    })
-})
-
-AchievementClicked.addEventListener('click', function() {
-    const screenHeight = window.innerHeight;
-    const targetPosition = screenHeight * 3.5;
-    window.scrollTo({
-
-        top: targetPosition,
-        behavior: 'smooth'
-    })
-})
-
-AchievementFooterClicked.addEventListener('click', function() {
-    const screenHeight = window.innerHeight;
-    const targetPosition = screenHeight * 3.5;
-    window.scrollTo({
-
-        top: targetPosition,
-        behavior: 'smooth'
-    })
-})
-
-ContactClicked.addEventListener('click', function() {
-    const screenHeight = window.innerHeight;
-    const targetPosition = screenHeight * 7.7;
-    window.scrollTo({
-
-        top: targetPosition,
-        behavior: 'smooth'
-    })
-})
-
-ContactFooterClicked.addEventListener('click', function() {
-    const screenHeight = window.innerHeight;
-    const targetPosition = screenHeight * 7.7;
-    window.scrollTo({
-
-        top: targetPosition,
-        behavior: 'smooth'
-    })
-})
 
 
 
